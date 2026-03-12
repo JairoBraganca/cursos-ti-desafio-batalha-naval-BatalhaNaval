@@ -1,77 +1,42 @@
-# Batalha Naval - Posicionamento de Navio
+# Batalha Naval - Exibição de Tabuleiro
 
-Um programa em C que implementa a lógica básica de posicionamento de um navio em um tabuleiro de Batalha Naval 10x10.
+Um programa em C que exibe um tabuleiro de Batalha Naval 10x10 com navios posicionados de forma fixa.
 
 ## 📋 Descrição
 
-O programa simula o posicionamento de um navio em um tabuleiro de jogo. O usuário fornece a linha, coluna e direção do navio, e o programa exibe o tabuleiro atualizado com o navio posicionado.
+O programa cria um tabuleiro de jogo 10x10 e posiciona dois navios de tamanho 3 em posições pré-definidas. Em seguida, exibe o tabuleiro completo mostrando as posições dos navios.
 
 ## 🎮 Como Funciona
 
 1. **Inicialização:** Cria uma matriz 10x10 preenchida com zeros (0 = posição vazia)
-2. **Entrada de Dados:** Solicita ao usuário:
-   - **Linha:** Uma letra de A a Z (representando as linhas)
-   - **Coluna:** Um número de 1 a 10 (representando as colunas)
-   - **Direção:** H (Horizontal) ou V (Vertical)
-3. **Conversão de Dados:** Converte letras minúsculas para maiúsculas e ajusta os índices para o array
-4. **Posicionamento:** Coloca um navio de tamanho 3 na matriz (3 = navio)
-5. **Exibição:** Mostra o tabuleiro completo com o navio posicionado
+2. **Posicionamento Fixo:** Coloca dois navios de tamanho 3 nas seguintes posições:
+   - Navio 1: Linhas 7-9, Coluna 9 (índices 6-8, coluna 8)
+   - Navio 2: Linha 4, Colunas 5-7 (índice 3, colunas 4-6)
+3. **Exibição:** Mostra o tabuleiro completo com os navios posicionados (3 = navio)
 
-## 🚀 Como Executar
-
-### Compilação:
-```bash
-gcc batalhaNaval.c -o batalhaNaval
-```
-
-### Execução:
-```bash
-./batalhaNaval
-```
-
-### Exemplo de Entrada:
-```
-Escolha a linha do navio de ( A - Z): A
-Escolha a coluna do navio de (1 - 10): 1
-Direcao do navio (H = Horizontal, V = Vertical): H
-```
 
 ### Exemplo de Saída:
 ```
-Tabuleiro atualizado:
-    1  2  3  4  5  6  7  8  9 10
-A   3  3  3  0  0  0  0  0  0  0
-B   0  0  0  0  0  0  0  0  0  0
-C   0  0  0  0  0  0  0  0  0  0
-D   0  0  0  0  0  0  0  0  0  0
-E   0  0  0  0  0  0  0  0  0  0
-F   0  0  0  0  0  0  0  0  0  0
-G   0  0  0  0  0  0  0  0  0  0
-H   0  0  0  0  0  0  0  0  0  0
-I   0  0  0  0  0  0  0  0  0  0
-J   0  0  0  0  0  0  0  0  0  0
+   A  B  C  D  E  F  G  H  I  J
+
+ 1  0  0  0  0  0  0  0  0  0  0
+ 2  0  0  0  0  0  0  0  0  0  0
+ 3  0  0  0  0  0  0  0  0  0  0
+ 4  0  0  0  0  3  3  3  0  0  0
+ 5  0  0  0  0  0  0  0  0  0  0
+ 6  0  0  0  0  0  0  0  0  0  0
+ 7  0  0  0  0  0  0  0  0  3  0
+ 8  0  0  0  0  0  0  0  0  3  0
+ 9  0  0  0  0  0  0  0  0  3  0
+10  0  0  0  0  0  0  0  0  0  0
 ```
 
-## 🛠️ Funcionalidades Implementadas
+##  Funcionalidades Implementadas
 
-- ✅ Matriz 10x10 para representar o tabuleiro
-- ✅ Entrada interativa do usuário (linha, coluna, direção)
-- ✅ Conversão de letras minúsculas para maiúsculas
-- ✅ Posicionamento de navio com tamanho 3
-- ✅ Suporte a direções Horizontal (H) e Vertical (V)
-- ✅ Exibição clara do tabuleiro com coordenadas
+-  Matriz 10x10 para representar o tabuleiro
+-  Posicionamento de navio com tamanho 3
+-  Exibição clara do tabuleiro com coordenadas
 
-## 📊 Estrutura do Código
-
-- **Matriz:** Array 10x10 para armazenar o estado do tabuleiro
-- **Loops aninhados:** Para preenchimento e exibição da matriz
-- **Conversão de valores:** Letra → índice e número → índice
-- **Printf formatado:** Exibição organizada do tabuleiro
-
-## 📝 Requisitos
-
-- Compilador C (gcc)
-- Sistema operacional com suporte a C padrão
 
 
 
