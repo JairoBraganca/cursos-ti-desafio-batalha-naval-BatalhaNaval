@@ -12,14 +12,21 @@ int main(){
         }
     }
 
-    matriz[6][8] = 3;
-    matriz[7][8] = 3;
-    matriz[8][8] = 3;
+    for (i = 0; i < 10; i++){
+        for (j = 0; j < 10; j++){
+            if (i == j){
+                matriz[i][j] = 3;
+            }
+        }
+    }
 
-    matriz[3][4] = 3;
-    matriz[3][5] = 3;
-    matriz[3][6] = 3;
-
+    for (i = 0; i < 10; i++){
+        for (j = 0; j < 10; j++){
+            if (i + j == 9){
+                matriz[i][j] = 3;
+            }
+        }
+    }
 
     printf("   ");
     for (j = 0; j < 10; j++){
